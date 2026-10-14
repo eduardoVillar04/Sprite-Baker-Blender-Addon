@@ -16,6 +16,7 @@ A Blender addon that converts 3D models into pixel art sprites. It prepares the 
   - [Camera Options](#camera-options)
   - [Palette Options](#palette-options)
   - [Rendering](#rendering)
+- [Examples](#examples)
 
 ---
 
@@ -124,3 +125,65 @@ Importing a palette **replaces** the current one. Lines that are not valid hexad
 - When using a relative path (`//`), save the `.blend` file first so that Blender can resolve it, or use an absolute path instead.
 - The destination folder must already exist.
 - If a file with the same name already exists, it is **not overwritten**. A numeric suffix is added instead (`_1`, `_2`, ...).
+
+---
+
+## Examples
+
+All the renders below use the **default values** of the addon, except for the render resolution (**Scale X**). 
+
+### Default render
+
+The model as imported into Blender, before applying any change with the addon.
+
+![Default render](images/default_render.png)
+
+### Results by resolution
+
+#### 128x64
+
+| Without palette | With palette |
+|:---:|:---:|
+| ![128x64 without palette](images/128x64_render.png) | ![128x64 with palette](images/128x64_render_palette.png) |
+
+#### 256x128
+
+| Without palette | With palette |
+|:---:|:---:|
+| ![256x128 without palette](images/256x128_render.png) | ![256x128 with palette](images/256x128_render_palette.png) |
+
+#### 512x256
+
+| Without palette | With palette |
+|:---:|:---:|
+| ![512x256 without palette](images/512x256_render.png) | ![512x256 with palette](images/512x256_render_palette.png) |
+
+### Palette used
+
+![Palette](images/palette.png)
+
+The palette in the format expected by the **Import palette** button:
+
+```text
+#002538
+#005e3a
+#0aad2a
+#69f63a
+#f8ffae
+#ffef3e
+#ea8b21
+#e14300
+#b41227
+#800243
+#000000
+#561620
+#b04933
+#ca7e57
+#ffd3a6
+#ffffff
+```
+
+### Credits
+
+- **3D model:** [mark-peters](https://sketchfab.com/mark-peters) on Sketchfab.
+- **Color palette:** [Isa's Master Palette](https://lospec.com/palette-list/isas-master-palette) on Lospec.
