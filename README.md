@@ -1,6 +1,19 @@
 # Sprite Baker
 
-A Blender addon that converts 3D models into pixel art sprites. It prepares the scene (flat colors, no lighting), frames the camera around the model, renders at a higher resolution to obtain a clean outline, downscales the result to the target pixel resolution, posterizes it, and optionally maps every pixel to a fixed color palette.
+Blender addon that turns 3D models into pixel art sprites.
+
+Sprite Baker was born in a team with plenty of developers but very few artists. We wanted to make a pixel art game, but nobody had the know-how to draw pixel art by hand. So I built a tool that takes models that are quick to create in 3D and converts them into usable sprites in just a few clicks.
+
+The generated sprites are meant to be a solid starting point: you can use them as they are or retouch them by hand, which speeds up your asset creation pipeline considerably.
+
+## Features
+
+- Automatic scene setup
+- Automatic camera framing
+- Color posterizing
+- Clean outlines
+- Custom color palettes, with import/export
+- Transparent PNG output
 
 **Requires Blender 5.0 or newer.**
 
